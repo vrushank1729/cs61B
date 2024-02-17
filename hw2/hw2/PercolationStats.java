@@ -24,7 +24,7 @@ public class PercolationStats {
                     } while(percSystem.isOpen(row, col));
                     percSystem.open(row, col);
                 }
-                x[i] = percSystem.numberOfOpenSites() * 1.0 / (N * N);
+                x[i] = (double) percSystem.numberOfOpenSites() / (double) (N * N);
             }
         }
     }
